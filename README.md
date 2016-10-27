@@ -4,12 +4,15 @@
 (github.comからはapacheユーザーでアクセスがくる想定で環境構築する必要がある)
 
 // ssh-keygenして公開鍵をgithubに登録
+
 sudo -u apache ssh-keygen -t rsa
 
 // Gitマスターをcloneする
+
 sudo -u apache git clone /usr/share/app/server/talkn/
 
 // Svnリポジトリを用意
+
 sudo -u apache svnadmin create /usr/share/app/svn/repos/talkn/
 
 // Svnにコミット
